@@ -8,9 +8,12 @@ public class Samad_1 {
 		
 		String abc = "agsfjgasfjgA";
 		String ABC = abc.toUpperCase();
-		char ch[] = ABC.toCharArray();
-		for (int i=ABC.length(); i>0; i--) 
-			System.out.print(i);
+		int length = ABC.length();
+		System.out.println(length);
+		
+	char chArray[] = ABC.toCharArray();
+		for (int i=ABC.length()-1; i>=0; i--) 
+			System.out.print(chArray[i]);
 	}
 
 }
