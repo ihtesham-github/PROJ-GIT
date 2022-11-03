@@ -2,8 +2,11 @@ package com.samad.stepdef;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.samad.POM.DellFeaturesValidation_POM;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -41,7 +44,16 @@ public class DellFeaturesValidation {
 	// Khadija (happykhadija) to write code for this step in branch name KHADIJA
 	@When("^I  types \"([^\"]*)\" and press enter$")
 	public void i_types_and_press_enter(String arg1) throws Throwable {
-	   
+		try {
+			DellFeaturesValidation_POM pom = new DellFeaturesValidation_POM(driver);
+			pom.TypeField().sendKeys(arg1);
+			
+			Thread.sleep(2000);
+			
+			pom.TypeField().sendKeys(Keys.ENTER);
+		} catch (Exception e) {
+			System.out.println("Element not found");
+		}
 	}
 
 	// Ahalam (ahalamoirdhaa) to write code for this step in branch name AHALAM
