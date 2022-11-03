@@ -1,22 +1,46 @@
 package com.samad.javacodes;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Ahalam {
 
 	public static void main(String[] args) {
-
-		int  z= 6;
 		
-		do {
-			System.out.println("Good morning");
-			z--;
-		} while (z>10);
+		//How to separate words from a sentence using java Scanner, ArrayList and while loop
 		
-		int  z1= -6;
+		String sentence = "Exercise can help you strengthen your brain";
+		Scanner scan = new Scanner(sentence);                //Import Scanner
+		ArrayList<String> words = new ArrayList<String>();   //Import ArrayList
 		
-		do {
-			System.out.println("Good night");
-			z1++;
-		} while (z1<10);
+		while(scan.hasNext()) {
+			words.add(scan.next());
+		}
+		System.out.println(words);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
