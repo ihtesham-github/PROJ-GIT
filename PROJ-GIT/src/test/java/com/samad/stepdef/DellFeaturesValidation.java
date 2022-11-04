@@ -68,7 +68,7 @@ public class DellFeaturesValidation {
 	  
 	}
 
-	// Samad (samad2022) to write code for this step in branch name SAMAD
+	// Poly to write code for this step in branch name POLY
 	@Then("^I lands on dell homepage$")
 	public void i_lands_on_dell_homepage() throws Throwable {
 	   
