@@ -38,6 +38,27 @@ public class Khadija1 {
 //        	reverse1 = reverse1 * 10+ remainder;
 //        	number = number/10;
 //        	System.out.println("The reverse of the given number is:" + reverse1);
+		
+		//String reverse
+		
+				String abc = "agsfjgasfjgA";
+				String ABC = abc.toUpperCase();
+				int length = ABC.length();
+				System.out.println(length);
+				
+			char chArray[] = ABC.toCharArray();
+				for (int i=ABC.length()-1; i>=0; i--) 
+					System.out.print(chArray[i]);
+				//String reverse
+				
+				String ab = "asdfrewy";
+				String AB = ab.toUpperCase();
+				int length1 = ab.length();
+				System.out.println(length1);
+				
+				char chaArray[] = AB.toCharArray();
+				 for(int i= AB.length()-1;i>=0;i--)
+					System.out.println(chaArray[i]);
 	}
 
 }
